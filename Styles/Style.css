@@ -33,8 +33,7 @@ body {
 	height: 100%;
 	font-family: Arial;
 	font-size: 14px;
-	background-image: url(bnk.png);
-	
+	background: url("bnk.png");
 
 }
 
