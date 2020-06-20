@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ChatBot | HNG</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="Styles/Alien.css">
+
+		<link rel="stylesheet" type="text/css" href="Styles/Style.css">
+
+		<script type="text/javascript" src="pat.js"></script>
+		<script type="text/javascript" src="answers.js"></script>
+
+		<script type="text/javascript" src="bela.js"></script>
+
+		<script type="text/javascript" src="chat.js"></script>
+	</head>
+	<body>
+		<div class="Main">
+			<div class="Header BottomSmallShadow">
+				
+			</div>
+
+			<div class="GrayBox" id="GrayBox">
+				<div class="LanguageSelectionArea">
+					<div class="Button" id="EnglishButton">WELCOME TO CHATBOT HNG<p>Please click here</p></div>
+				</div>
+			</div>
+
+			<div class="MessagesArea" id="MessagesArea"></div>
+
+			<div class="Bottom">
+				<input type="text" name="MessageEntry" class="MessageEntry" id="MessageEntry" placeholder="Type your message...">
+				
+			</div>
+
+
+			<script type="text/javascript">
+				var EnglishButton = document.getElementById("EnglishButton");
+
+			
+
+				EnglishButton.addEventListener ("mousedown", function (Event) {
+					Isabela.Language = "English";
+
+					var GrayBox = document.getElementById ("GrayBox");
+					GrayBox.parentNode.removeChild (GrayBox);
+
+					ChatScreen.Input.setAttribute("placeholder", "Type your message...");
+
+				});
+
+
+				ChatScreen.Start ();
+			</script>
+		</div>
+	</body>
+</html>
